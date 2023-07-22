@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <NavbarComponent />
+    <NavbarComponent :token="token"/>
     <div class="p-3">
       <HomeSliderComponent />
       <HomeSponsorComponent :token="token"/>
