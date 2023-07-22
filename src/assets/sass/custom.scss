@@ -1,0 +1,54 @@
+$theme-colors: (
+        'primary': #FAA8AA,
+        'secondary': #F178B6,
+        'danger': #EE6352,
+        'success': #52A341,
+        'info': #1E5BD2,
+        'warning': #F0C13E,
+);
+
+// Create your own map
+// color names based on color names in figma/design.
+$custom-colors: (
+        'background': #F60889,
+        'grey':#d9d9d9,
+        'white':white,
+        'blue': #2886CF,
+        'soft-blue': #E9F3FA,
+        'darker-green': #00879A,
+        'green': #00A2B9,
+        'soft-green': #E6F6F8,
+        'darker-purple': #242038,
+        'purple': #4F3F9E,
+        'soft-purple': #E8E1ED,
+        'black': #302B27,
+        'grey-hard': #716D6A,
+        'grey-medium': #CBCBCB,
+        'grey-soft': #EEEEEE,
+        'grey-so-soft': #F8F8F8,
+        'help': #1E5BD2,
+        'alert-soft': #FDEFEE,
+        'warning-soft': #FEF9EC,
+        'info-soft': #E8EFFB,
+        'success-soft': #F0F9EE,
+        'help-soft': #EDECF5,
+        'warning-darker' : #D8A413
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$min-contrast-ratio: 3;
+
+$breadcrumb-active-color: #25262b;
+
+$tooltip-font-size: 12px;
+$tooltip-color: #302B27;
+$tooltip-bg: #FFFFFF;
+$tooltip-opacity: 1;
+$tooltip-arrow-color: $tooltip-bg;
+$tooltip-arrow-height: .6rem;
+
+// Input
+// $input-focus-border-color:              $component-active-bg;
+$input-focus-box-shadow: none;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
