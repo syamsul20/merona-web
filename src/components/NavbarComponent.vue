@@ -23,17 +23,15 @@
                     <li class="nav-item">
                         <router-link class="nav-link" to="/order">ORDER</router-link>
                     </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/contact">CONTACT US</router-link>
-                    </li>
+                    
                     <li class="nav-item cart-item">
                         <router-link class="nav-link" to="/cart">
                             Shopping Bag
                             <img src="@/assets/icons/shopping-bag.png" alt="">
                         </router-link>
                     </li>
-                    <li class="nav-item">
-                        <label class="nav-link" style="cursor:pointer">Log Out</label>
+                    <li class="nav-item" v-if="token !== null">
+                        <label class="nav-link" style="cursor:pointer" @click="logout">Log Out</label>
                     </li>
                 </ul>
             </div>
@@ -46,6 +44,12 @@
 
 export default {
     name: "NavbarComponent",
+    methods: {
+        logout() {
+            localStorage.clear();
+            location.reload();
+        } 
+    }
 };
 </script>
 

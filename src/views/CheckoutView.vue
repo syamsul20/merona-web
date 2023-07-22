@@ -143,9 +143,9 @@ export default {
                 { id: 3, price: '10000', image: 'https://www.nuwori.com/wp-content/uploads/2017/10/logo-sicepat.png', name: 'SICEPAT' },
             ],
             payment: [
-                { id: 1, price: '28000', image: 'https://blogpictures.99.co/cara-menggunakan-ovo.jpg', name: 'OVO' },
-                { id: 2, price: '14000', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png', name: 'DANA' },
-                { id: 3, price: '10000', image: 'https://image.cermati.com/v1585904886/o81yliwckjhywelnx13a.png', name: 'GOPAY' },
+                { id: 1, price: '2500', image: 'https://blogpictures.99.co/cara-menggunakan-ovo.jpg', name: 'OVO' },
+                { id: 2, price: '2500', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png', name: 'DANA' },
+                { id: 3, price: '1000', image: 'https://image.cermati.com/v1585904886/o81yliwckjhywelnx13a.png', name: 'GOPAY' },
             ],
             selectedKurirId: null,
             selectedPaymentId: null,
